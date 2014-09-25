@@ -13,13 +13,9 @@ namespace GG.Progress
         {
             routes.IgnoreRoute("{resource}.axd/{*pathInfo}");
 
-            routes.MapRoute("dfgfdgfdg", "progress2", new {controller = "Progress", action = "Index2"});
+            routes.MapRoute("progress1", "", new {controller = "Progress", action = "Index"});
+            routes.MapRoute("progress2", "progress2", new {controller = "Progress", action = "Index2"});
 
-            routes.MapRoute(
-                name: "Default",
-                url: "{controller}/{action}/{id}",
-                defaults: new { controller = "Progress", action = "Index", id = UrlParameter.Optional }
-            );
         }
     }
 }
