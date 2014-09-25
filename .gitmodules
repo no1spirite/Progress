@@ -1,0 +1,3 @@
+[submodule "GG.Web.Home/ui"]
+	path = GG.Web.Home/ui
+	url = git@github.com:JustGiving/ui.git
