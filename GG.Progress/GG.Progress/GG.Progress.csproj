@@ -118,6 +118,9 @@
     <Compile Include="App_Start\FilterConfig.cs" />
     <Compile Include="App_Start\RouteConfig.cs" />
     <Compile Include="App_Start\WebApiConfig.cs" />
+    <Content Include="Content\site.min.css">
+      <DependentUpon>site.less</DependentUpon>
+    </Content>
     <Content Include="Global.asax" />
     <Content Include="Web.config" />
     <Content Include="Web.Debug.config">
@@ -137,6 +140,12 @@
   </ItemGroup>
   <ItemGroup>
     <Content Include="Views\Progress\index.cshtml" />
+  </ItemGroup>
+  <ItemGroup>
+    <Content Include="Content\site.less" />
+  </ItemGroup>
+  <ItemGroup>
+    <Content Include="Views\Progress\index2.cshtml" />
   </ItemGroup>
   <PropertyGroup>
     <VisualStudioVersion Condition="'$(VisualStudioVersion)' == ''">10.0</VisualStudioVersion>
